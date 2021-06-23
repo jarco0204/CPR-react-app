@@ -4,6 +4,8 @@
 
 • As of Node 14+, the project will build with vulnerabilities. The project is intended for development purposes.
 
+• This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ### Node Commands available
 
 1. npm run start (Set by React)
@@ -34,3 +36,8 @@ https://prettier.io/docs/en/options.html
 https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
 ## Components
+
+### React-Bootstrap
+
+• Library that brings bootstrap support in React.
+• Some components are just imported into files.

@@ -1,0 +1,72 @@
+.Component {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.InputComponent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.centerText {
+    text-align: center;
+}
+#divTitleInput {
+    margin: 15px 0;
+}
+
+#secondaryTitleInput {
+    font-size: medium;
+    padding-left: 5px;
+}
+#noAccountLinkInput {
+    font-size: small;
+}
+#formButtonInput {
+    border-radius: 15px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+// Right section
+.DetailsComponent {
+    width: 100%;
+    @media screen and (max-width: 756px) {
+        display: none; // Don't show this side of the screen for mobile
+    }
+}
+#detailsLogInDiv {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(86, 226, 172);
+}
+#mainCardComponent {
+    width: 400px;
+    border-radius: 10px;
+    margin: 50px 0;
+    border: rgb(11, 220, 248) 1px solid;
+}
+#mainTitleDetails {
+    color: black;
+}
+#secondaryTitleDetails {
+    font-size: medium;
+    margin: 20px 0;
+}
+#buttonDetails {
+    border-radius: 15px;
+    width: 200px;
+    margin: 20px auto;
+}
+#imageDetails {
+    width: 400px;
+    // padding: 20px 0;
+}
