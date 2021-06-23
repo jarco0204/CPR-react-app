@@ -10,7 +10,7 @@ const Login = () => {
         <>
             {/* Navbar */}
             <Navbar id="navbar" expand="lg">
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="/">
                     <img alt="Our logo" src={logo} className="logo" />
                 </Navbar.Brand>
             </Navbar>

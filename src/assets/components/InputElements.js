@@ -1,9 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "../scss/App.scss";
 
 const InputElements = () => {
+    // UseState Hook
+    const [emailInput, setEmailInput] = useState("");
+    const [passwordInput, setPasswordInput] = useState("");
+
+    //Function that changes the value of the email input as keys are pressed
+    const updateEmailInput = (event) => {
+        setEmailInput(event.target.value);
+    };
+    //Function that changes the value of the password input as keys are pressed
+    const updatePasswordInput = (event) => {
+        setPasswordInput(event.target.value);
+    };
+
+    // Function that handles what happens when form is submitted
+    const captureFormData = (event) => {
+        event.preventDefault(); // Prevents the page from reloading
+        if (emailInput.length <= 1 || passwordInput <= 1) {
+            console.log("Error");
+        } else {
+            console.log(emailInput);
+            console.log(passwordInput);
+            // Perform some sort of validation with your API
+            // Grant access to next page /home
+        }
+        clearInputs();
+    };
+
+    // Function that clears the inputs (only necessary for development)
+    const clearInputs = () => {
+        // JS function that executes internal function after 2 seconds
+        setTimeout(() => {
+            setEmailInput("");
+            setPasswordInput("");
+        }, 2000);
+    };
     return (
         <>
             <div className="centerText" id="divTitleInput">
@@ -19,11 +54,23 @@ const InputElements = () => {
             </div>
             <Form>
                 <Form.Group controlId="formBasicEmail">
-                    <Form.Control type="email" placeholder="Username" />
+                    <Form.Control
+                        value={emailInput}
+                        onChange={(evt) => updateEmailInput(evt)}
+                        type="email"
+                        placeholder="Username"
+                        required
+                    />
                 </Form.Group>
 
                 <Form.Group controlId="formBasicPassword">
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control
+                        value={passwordInput}
+                        onChange={(evt) => updatePasswordInput(evt)}
+                        type="password"
+                        placeholder="Password"
+                        required
+                    />
                 </Form.Group>
 
                 <Button
@@ -32,6 +79,7 @@ const InputElements = () => {
                     size="lg"
                     block
                     type="submit"
+                    onClick={captureFormData}
                 >
                     Log In
                 </Button>

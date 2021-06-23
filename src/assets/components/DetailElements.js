@@ -19,7 +19,13 @@ const DetailElements = () => {
                         become more sustainable and profitable.
                     </Card.Subtitle>
 
-                    <Button id="buttonDetails" variant="primary" size="m" block>
+                    <Button
+                        href="/"
+                        id="buttonDetails"
+                        variant="primary"
+                        size="m"
+                        block
+                    >
                         Learn More
                     </Button>
                 </Card.Body>
