@@ -8,8 +8,8 @@
 
 ### Node Commands available
 
-1. npm run start (Set by React)
-2. npm run build (Set by React)
+1. npm run start (Set by React- Starts a development server)
+2. npm run build (Set by React- Creates a bundled version)
 3. npm run lint
 4. npm run format
 
@@ -35,9 +35,32 @@
 https://prettier.io/docs/en/options.html
 https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
-## Components
+## Packages
+
+### SASS
+
+• CSS pre-processor with syntax advancements
+• SCSS is a syntax available for SASS
+
+### Bootstrap
+
+• Free and open-source CSS framework directed at responsive, mobile-first front-end web development.
+• Necessary in order to use React-Bootstrap components
 
 ### React-Bootstrap
 
 • Library that brings bootstrap support in React.
 • Some components are just imported into files.
+https://react-bootstrap.github.io/components/buttons/
+
+## File Structure
+
+### public directory
+
+• Contains main html and public assets
+
+### src directory
+
+• Contains main index.js file
+• Contains an assets directory which contains 3 directories: components (functions written in JS), img, and scss.
+• Contains pages directory
