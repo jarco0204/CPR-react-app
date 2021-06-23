@@ -64,3 +64,9 @@ https://react-bootstrap.github.io/components/buttons/
 • Contains main index.js file
 • Contains an assets directory which contains 3 directories: components (functions written in JS), img, and scss.
 • Contains pages directory
+
+## How to Run the App
+
+### Run in terminal:
+• npm install 
+• npm run start
